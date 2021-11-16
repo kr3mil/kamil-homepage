@@ -16,7 +16,7 @@ import { BioSection, BioYear } from '../components/bio'
 const Page = () => {
   return (
     <Container>
-      <Box
+      {/* <Box
         borderRadius="lg"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         p={3}
@@ -24,7 +24,7 @@ const Page = () => {
         align="center"
       >
         Hello, I&apos;m a full-stack developer based in the United Kingdom!
-      </Box>
+      </Box> */}
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
