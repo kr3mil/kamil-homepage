@@ -1,5 +1,5 @@
-import { NextResponse, NextRequest } from 'next/server'
-export async function middleware(req, ev) {
+import { NextResponse } from 'next/server'
+export async function middleware(req) {
   const { pathname } = req.nextUrl
   if (pathname.startsWith('/pay')) {
     let restOfUrl = pathname.substring(5)
