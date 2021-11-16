@@ -1,5 +1,13 @@
 import NextLink from 'next/link'
-import { Button, Container, Box, Heading, Image, Link } from '@chakra-ui/react'
+import {
+  Button,
+  Container,
+  Box,
+  Heading,
+  Image,
+  Link,
+  useColorModeValue
+} from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
@@ -8,7 +16,7 @@ import { BioSection, BioYear } from '../components/bio'
 const Page = () => {
   return (
     <Container>
-      {/* <Box
+      <Box
         borderRadius="lg"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         p={3}
@@ -16,7 +24,7 @@ const Page = () => {
         align="center"
       >
         Hello, I&apos;m a full-stack developer based in the United Kingdom!
-      </Box> */}
+      </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
