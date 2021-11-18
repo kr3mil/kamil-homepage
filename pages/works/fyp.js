@@ -12,10 +12,10 @@ import Layout from '../../components/layouts/article'
 
 const Work = () => {
   return (
-    <Layout title="Discord Bot">
+    <Layout title="Final Year Project">
       <Container>
         <Title>
-          Discord Bot <Badge>2021</Badge>
+          Discord Bot <Badge>2020</Badge>
         </Title>
         <P>
           Constantly evolving discord bot hosted on heroku. Used by 20+ servers
@@ -45,7 +45,7 @@ const Work = () => {
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Platform</Meta>
-          <span>Discord (Windows / macOS / Linux / iOS / Android)</span>
+          <span>Windows/macOS/Linux/iOS/Android</span>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
