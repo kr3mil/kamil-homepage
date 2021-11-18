@@ -6,19 +6,22 @@ import {
   Heading,
   Image,
   Link,
-  useColorModeValue
+  List,
+  ListItem,
+  Icon
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
+import { IoLogoGithub } from 'react-icons/io5'
 
 const Page = () => {
   return (
     <Layout>
       <Container>
-        <Box
+        {/* <Box
           borderRadius="lg"
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
           p={3}
@@ -26,7 +29,7 @@ const Page = () => {
           align="center"
         >
           Hello, I&apos;m a full-stack developer based in the United Kingdom!
-        </Box>
+        </Box> */}
 
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
@@ -64,11 +67,7 @@ const Page = () => {
             Vestibulum nec diam eros. Cras quis sapien a lorem sodales porta ut
             at ipsum. Fusce tincidunt ante ac mi interdum dignissim. Quisque
             vestibulum leo in nisl fringilla ultricies. Ut quis semper risus.
-            Morbi eu viverra nunc. He is living off his own product called{' '}
-            <NextLink href="/works/inkdrop">
-              <Link>Inkdrop</Link>
-            </NextLink>
-            .
+            Morbi eu viverra nunc.
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
@@ -101,6 +100,25 @@ const Page = () => {
             <BioYear>2020 to present</BioYear>
             Works as a Graduate Software Engineer at Siemens (Reyrolle).
           </BioSection>
+        </Section>
+
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            On the web
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/kr3mil" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                >
+                  @kr3mil
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>
