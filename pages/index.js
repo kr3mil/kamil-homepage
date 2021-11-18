@@ -15,22 +15,12 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
-import { IoLogoGithub } from 'react-icons/io5'
+import { IoLogoDiscord, IoLogoGithub } from 'react-icons/io5'
 
 const Page = () => {
   return (
     <Layout>
       <Container>
-        {/* <Box
-          borderRadius="lg"
-          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-          p={3}
-          mb={6}
-          align="center"
-        >
-          Hello, I&apos;m a full-stack developer based in the United Kingdom!
-        </Box> */}
-
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
@@ -82,9 +72,14 @@ const Page = () => {
           <Heading as="h3" variant="section-title">
             Bio
           </Heading>
-          <BioSection>
+          {/* <BioSection>
             <BioYear>1997</BioYear>
             Born in Strzelce Opolskie, Poland.
+          </BioSection> */}
+          <BioSection>
+            <BioYear>2015</BioYear>
+            Started studying Computer Games Programming (BSc Hons) at Teesside
+            University, Middlesbrough
           </BioSection>
           <BioSection>
             <BioYear>2019</BioYear>
@@ -93,8 +88,8 @@ const Page = () => {
           </BioSection>
           <BioSection>
             <BioYear>2020</BioYear>
-            Received a First Class Honours Bachelor of Science (Hons) Award in
-            Computer Games Programming at Teesside University.
+            Received a First Class Honours Bachelor of Science Award in Computer
+            Games Programming at Teesside University.
           </BioSection>
           <BioSection>
             <BioYear>2020 to present</BioYear>
@@ -114,7 +109,21 @@ const Page = () => {
                   colorScheme="teal"
                   leftIcon={<Icon as={IoLogoGithub} />}
                 >
-                  @kr3mil
+                  Github
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://discordapp.com/users/121675133185294339/"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoDiscord} />}
+                >
+                  Discord
                 </Button>
               </Link>
             </ListItem>
