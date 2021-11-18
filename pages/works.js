@@ -50,11 +50,12 @@ const Works = () => {
           </Section>
           <Section>
             <WorkGridItem
-              id="uni-game-jam"
-              title="University Game Jam Module"
+              id="slime-time"
+              title="Slime Time"
               thumbnail={thumbUniGameJam}
             >
-              4 player local co-op party game made in Unity
+              4 player local co-op party game made in Unity for my University
+              Game Jam module
             </WorkGridItem>
           </Section>
         </SimpleGrid>
@@ -70,12 +71,18 @@ const Works = () => {
         <SimpleGrid columns={[1, 1, 1]} gap={6}>
           <Section>
             <WorkGridItem
-              id="wowie-jam"
-              title="Wowie Jam 2.0!"
+              id="bug-ops-arcade"
+              title="Bug Ops Arcade"
               thumbnail={thumbBugops}
             >
               2D top down shooter created in under 72h for a game jam with a
-              theme of &apos;Intentional Bugs&apos;
+              theme of &apos;Intentional Bugs&apos; for Wowie Jam 2.0!
+            </WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem id="wonky" title="Wonky" thumbnail={thumbBugops}>
+              2D platformer​ using only one key (space) and one wonky leg. Made
+              for GMTK Game Jam 2019!
             </WorkGridItem>
           </Section>
         </SimpleGrid>
