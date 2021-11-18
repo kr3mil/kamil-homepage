@@ -13,7 +13,7 @@ const Works = () => {
           Works
         </Heading>
 
-        <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <SimpleGrid columns={[1, 1, 1]} gap={6}>
           <Section>
             <WorkGridItem
               id="discord-bot"
