@@ -1,8 +1,11 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
 import thumbDiscordBot from '../public/images/works/discord-bot-eyecatch.png'
+import thumbBugops from '../public/images/works/bugops_eyecatch.png'
+import thumbFyp from '../public/images/works/fyp_eyecatch.gif'
+import thumbUniGameJam from '../public/images/works/uni-game-jam_eyecatch.png'
 import Layout from '../components/layouts/article'
 
 const Works = () => {
@@ -10,7 +13,7 @@ const Works = () => {
     <Layout>
       <Container>
         <Heading as="h3" fontSize={20} mb={4}>
-          Works
+          Current Works
         </Heading>
 
         <SimpleGrid columns={[1, 1, 1]} gap={6}>
@@ -26,45 +29,56 @@ const Works = () => {
           </Section>
         </SimpleGrid>
 
-        {/* <Section delay={0.2}>
+        <Section delay={0.2}>
           <Divider my={6} />
 
           <Heading as="h3" fontSize={20} mb={4}>
-            Collaborations
+            University Works
           </Heading>
         </Section>
 
-        <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <Section delay={0.3}>
+        <SimpleGrid columns={[1, 1, 1]} gap={6}>
+          <Section>
             <WorkGridItem
-              id="modetokyo"
-              thumbnail={thumbModeTokyo}
-              title="mode.tokyo"
+              id="fyp"
+              title="Final Year Project"
+              thumbnail={thumbFyp}
             >
-              The mode magazine for understanding to personally enjoy Japan
+              Modding tool and 2D game used to showcase how modding can affect
+              the variation and longevity of a game
             </WorkGridItem>
           </Section>
-        </SimpleGrid> */}
+          <Section>
+            <WorkGridItem
+              id="uni-game-jam"
+              title="University Game Jam Module"
+              thumbnail={thumbUniGameJam}
+            >
+              4 player local co-op party game made in Unity
+            </WorkGridItem>
+          </Section>
+        </SimpleGrid>
 
-        {/* <Section delay={0.4}>
+        <Section delay={0.2}>
           <Divider my={6} />
 
           <Heading as="h3" fontSize={20} mb={4}>
-            Old works
+            Game Jams
           </Heading>
         </Section>
 
-        <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <Section delay={0.5}>
+        <SimpleGrid columns={[1, 1, 1]} gap={6}>
+          <Section>
             <WorkGridItem
-              id="pichu2"
-              thumbnail={thumbPichu2}
-              title="Pichu*Pichu"
+              id="wowie-jam"
+              title="Wowie Jam 2.0!"
+              thumbnail={thumbBugops}
             >
-              Twitter client app for iPhone Safari
+              2D top down shooter created in under 72h for a game jam with a
+              theme of &apos;Intentional Bugs&apos;
             </WorkGridItem>
           </Section>
-        </SimpleGrid> */}
+        </SimpleGrid>
       </Container>
     </Layout>
   )
