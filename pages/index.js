@@ -16,6 +16,7 @@ import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import { IoLogoDiscord, IoLogoGithub } from 'react-icons/io5'
+import { ItchIoIcon } from '../components/icons'
 
 const Page = () => {
   return (
@@ -124,6 +125,17 @@ const Page = () => {
                   leftIcon={<Icon as={IoLogoDiscord} />}
                 >
                   Discord
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://kr3mil.itch.io/" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<ItchIoIcon />}
+                >
+                  Itch.io
                 </Button>
               </Link>
             </ListItem>
