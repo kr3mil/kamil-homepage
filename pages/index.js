@@ -73,12 +73,8 @@ const Page = () => {
           <Heading as="h3" variant="section-title">
             Bio
           </Heading>
-          {/* <BioSection>
-            <BioYear>1997</BioYear>
-            Born in Strzelce Opolskie, Poland.
-          </BioSection> */}
           <BioSection>
-            <BioYear>2015</BioYear>
+            <BioYear>2016</BioYear>
             Started studying Computer Games Programming (BSc Hons) at Teesside
             University, Middlesbrough
           </BioSection>
