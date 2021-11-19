@@ -80,8 +80,7 @@ const Work = () => {
             <Carousel
               currentIndex={currentImage}
               views={images.map(x => ({
-                ...x,
-                srcset: x.src,
+                source: x.src,
                 caption: x.title
               }))}
             />
