@@ -1,4 +1,4 @@
-import { Container, Badge, List, Link, ListItem } from '@chakra-ui/react'
+import { Container, Badge, List, Link, ListItem, Text } from '@chakra-ui/react'
 import { Title, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
@@ -16,10 +16,13 @@ const Work = () => {
           in the final year. The idea for this project was to prove how modding
           tools can affect the variation and longevity in a game hopefully
           showcasing the positive impact of them and getting more people
-          familiar with how easy modding can be. I developed both the modding
-          tools and the game itself for this project. You can see the progress
-          over time on the <Link href="/posts/fyp">posts</Link> page.
+          familiar with how easy modding can be.
         </P>
+        <Text mt="20px">
+          I developed both the modding tools and the game itself for this
+          project. You can see the progress over time on the{' '}
+          <Link href="/posts/fyp">posts</Link> page.
+        </Text>
       </Container>
       <List ml={4} my={4}>
         <ListItem>
