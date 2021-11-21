@@ -22,7 +22,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
 )
 
 export const WorkGridItem = ({ children, id, title, thumbnail }) => (
-  <Box w="100%" align="center">
+  <Box align="center">
     <NextLink href={`/works/${id}`}>
       <LinkBox cursor="pointer">
         {thumbnail.src.split('.').pop() === 'gif' ? (

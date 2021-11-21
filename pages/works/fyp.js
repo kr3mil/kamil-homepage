@@ -2,6 +2,7 @@ import {
   Container,
   Badge,
   List,
+  Link,
   ListItem,
   UnorderedList,
   Text
@@ -15,32 +16,18 @@ const Work = () => {
     <Layout title="Final Year Project">
       <Container>
         <Title>
-          Discord Bot <Badge>2020</Badge>
+          Final Year Project <Badge>2020</Badge>
         </Title>
         <P>
-          Constantly evolving discord bot hosted on heroku. Used by 20+ servers
-          and 1000+ members, supports large scale expansion.
+          This was the submission for my final year project at University. I
+          received a First in this and it was worth the majority of my Credits
+          in the final year. The idea for this project was to prove how modding
+          tools can affect the variation and longevity in a game hopefully
+          showcasing the positive impact of them and getting more people
+          familiar with how easy modding can be. I developed both the modding
+          tools and the game itself for this project. You can see the progress
+          over time on the <Link href="/posts">posts</Link> page.
         </P>
-        <Text>Notable features include:</Text>
-        <UnorderedList pl="15px">
-          <ListItem>
-            Music playing support - Youtube, Spotify, Apple music, Youtube Music
-          </ListItem>
-          <ListItem>
-            Cloud synced favourites list - Hosted on Cloud Firestore
-          </ListItem>
-          <ListItem>
-            Trivia - Playing live trivia games against other members in the
-            server
-          </ListItem>
-          <ListItem>
-            Link to video conversion - Automatically converts non embedded
-          </ListItem>
-          <ListItem>
-            Automatic patch notes in specified channel when main git branch is
-            updated
-          </ListItem>
-        </UnorderedList>
       </Container>
       <List ml={4} my={4}>
         <ListItem>

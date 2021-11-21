@@ -76,16 +76,21 @@ const Work = () => {
           about progress and future work. Look below for some trailers, gameplay
           videos, and stills.
         </Text>
-      </Container>
-      <VStack flex={1} flexDir="column" mt="20px">
-        <ReactPlayer url="https://youtu.be/nsUo0liR_XQ" controls={true} />
+        <ReactPlayer
+          width="100%"
+          style={{ marginTop: '20px' }}
+          url="https://youtu.be/nsUo0liR_XQ"
+          controls={true}
+        />
         <ReactPlayer
           url="https://youtu.be/OxQSM20mR7Q"
+          width="100%"
           controls={true}
           style={{ marginTop: '20px' }}
         />
         <Gallery images={images} />
-      </VStack>
+      </Container>
+
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Platform</Meta>

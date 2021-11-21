@@ -45,10 +45,14 @@ const Work = () => {
           challenges and make me more familiar with 2D programming ready for my
           final year project. A gameplay video can be seen below.
         </Text>
+        <ReactPlayer
+          width="100%"
+          style={{ marginTop: '20px' }}
+          url="https://youtu.be/8YkTf20QNLM"
+          controls={true}
+        />
       </Container>
-      <HStack flex={1} flexDir="column" mt="20px">
-        <ReactPlayer url="https://youtu.be/8YkTf20QNLM" controls={true} />
-      </HStack>
+
       <Container mt="20px">
         <Text>
           The game can be played and downloaded from{' '}
