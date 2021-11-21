@@ -7,7 +7,7 @@ const Posts = () => (
       <Heading as="h3" fontSize={20} mb={4}>
         Popular Posts
         <SimpleGrid columns={[1, 2, 3]} gap={6}>
-          // TODO
+          {/* TODO */}
         </SimpleGrid>
       </Heading>
     </Container>

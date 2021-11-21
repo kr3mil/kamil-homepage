@@ -5,7 +5,6 @@ import {
   ListItem,
   UnorderedList,
   Text,
-  HStack,
   Link,
   Divider
 } from '@chakra-ui/react'

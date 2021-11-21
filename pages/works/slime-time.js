@@ -4,8 +4,7 @@ import {
   List,
   ListItem,
   UnorderedList,
-  Text,
-  VStack
+  Text
 } from '@chakra-ui/react'
 import { Title, Meta } from '../../components/work'
 import P from '../../components/paragraph'

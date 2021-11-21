@@ -50,15 +50,11 @@ const Page = () => {
 
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            Work
+            About
           </Heading>
           <Paragraph>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-            porttitor sit amet turpis non sagittis. Donec sodales justo erat.
-            Vestibulum nec diam eros. Cras quis sapien a lorem sodales porta ut
-            at ipsum. Fusce tincidunt ante ac mi interdum dignissim. Quisque
-            vestibulum leo in nisl fringilla ultricies. Ut quis semper risus.
-            Morbi eu viverra nunc.
+            Graduate Software Engineer currently working for Siemens. Dedicated
+            to enhance my skills and always expand my career.
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">

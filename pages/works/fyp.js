@@ -1,12 +1,4 @@
-import {
-  Container,
-  Badge,
-  List,
-  Link,
-  ListItem,
-  UnorderedList,
-  Text
-} from '@chakra-ui/react'
+import { Container, Badge, List, Link, ListItem } from '@chakra-ui/react'
 import { Title, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
@@ -26,21 +18,23 @@ const Work = () => {
           showcasing the positive impact of them and getting more people
           familiar with how easy modding can be. I developed both the modding
           tools and the game itself for this project. You can see the progress
-          over time on the <Link href="/posts">posts</Link> page.
+          over time on the <Link href="/posts/fyp">posts</Link> page.
         </P>
       </Container>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Platform</Meta>
-          <span>Windows/macOS/Linux/iOS/Android</span>
+          <span>Windows</span>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>NodeJS</span>
+          <span>Unity</span>
         </ListItem>
         <ListItem>
-          <Meta>NPM</Meta>
-          <span>discord.js / slappey </span>
+          <Meta>Blog</Meta>
+          <span>
+            <Link href="/posts">Posts</Link>
+          </span>
         </ListItem>
       </List>
     </Layout>
