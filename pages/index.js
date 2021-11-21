@@ -53,8 +53,10 @@ const Page = () => {
             About
           </Heading>
           <Paragraph>
-            Graduate Software Engineer currently working for Siemens. Dedicated
-            to enhance my skills and always expand my career.
+            Graduate Software Engineer currently working for Siemens,
+            centralising on the enhancement and expansion of my skillset and
+            career. Repertoire inclusive of but not limited to (insert main
+            skills/languages here).
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
