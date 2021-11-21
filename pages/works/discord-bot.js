@@ -21,7 +21,7 @@ const Work = () => {
           Constantly evolving discord bot hosted on heroku. Used by 20+ servers
           and 1000+ members, supports large scale expansion.
         </P>
-        <Text>Notable features include:</Text>
+        <Text mt="20px">Notable features include:</Text>
         <UnorderedList pl="15px">
           <ListItem>
             Music playing support - Youtube, Spotify, Apple music, Youtube Music

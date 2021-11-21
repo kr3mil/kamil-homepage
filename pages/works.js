@@ -4,8 +4,9 @@ import { WorkGridItem } from '../components/grid-item'
 
 import thumbDiscordBot from '../public/images/works/discord-bot-eyecatch.png'
 import thumbBugops from '../public/images/works/bugops_eyecatch.png'
-import thumbFyp from '../public/images/works/fyp_eyecatch.gif'
+import thumbFyp from '../public/images/works/fyp_eyecatch.png'
 import thumbUniGameJam from '../public/images/works/uni-game-jam_eyecatch.png'
+import thumbWonky from '../public/images/works/wonky_eyecatch.png'
 import Layout from '../components/layouts/article'
 
 const Works = () => {
@@ -80,7 +81,7 @@ const Works = () => {
             </WorkGridItem>
           </Section>
           <Section>
-            <WorkGridItem id="wonky" title="Wonky" thumbnail={thumbBugops}>
+            <WorkGridItem id="wonky" title="Wonky" thumbnail={thumbWonky}>
               2D platformer​ using only one key (space) and one wonky leg. Made
               for GMTK Game Jam 2019!
             </WorkGridItem>

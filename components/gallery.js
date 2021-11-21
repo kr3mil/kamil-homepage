@@ -38,7 +38,7 @@ const Gallery = props => {
       </ModalGateway>
       <SimpleGrid
         pt="20px"
-        columns={[2, null, 3]}
+        columns={[1, 2, 3]}
         spacing="10px"
         onClick={openLightbox}
       >

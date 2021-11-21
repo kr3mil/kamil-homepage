@@ -16,6 +16,7 @@ import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import { IoLogoDiscord, IoLogoGithub } from 'react-icons/io5'
+import { ItchIoIcon } from '../components/icons'
 
 const Page = () => {
   return (
@@ -49,15 +50,11 @@ const Page = () => {
 
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            Work
+            About
           </Heading>
           <Paragraph>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-            porttitor sit amet turpis non sagittis. Donec sodales justo erat.
-            Vestibulum nec diam eros. Cras quis sapien a lorem sodales porta ut
-            at ipsum. Fusce tincidunt ante ac mi interdum dignissim. Quisque
-            vestibulum leo in nisl fringilla ultricies. Ut quis semper risus.
-            Morbi eu viverra nunc.
+            Graduate Software Engineer currently working for Siemens. Dedicated
+            to enhance my skills and always expand my career.
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
@@ -72,12 +69,8 @@ const Page = () => {
           <Heading as="h3" variant="section-title">
             Bio
           </Heading>
-          {/* <BioSection>
-            <BioYear>1997</BioYear>
-            Born in Strzelce Opolskie, Poland.
-          </BioSection> */}
           <BioSection>
-            <BioYear>2015</BioYear>
+            <BioYear>2016</BioYear>
             Started studying Computer Games Programming (BSc Hons) at Teesside
             University, Middlesbrough
           </BioSection>
@@ -124,6 +117,17 @@ const Page = () => {
                   leftIcon={<Icon as={IoLogoDiscord} />}
                 >
                   Discord
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://kr3mil.itch.io/" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<ItchIoIcon />}
+                >
+                  Itch.io
                 </Button>
               </Link>
             </ListItem>
