@@ -8,7 +8,8 @@ import {
   Link,
   List,
   ListItem,
-  Icon
+  Icon,
+  HStack
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
@@ -58,22 +59,35 @@ const Page = () => {
             career. Repertoire inclusive of but not limited to (insert main
             skills/languages here).
           </Paragraph>
-          <Box align="center" my={4}>
-            <NextLink href="/about">
-              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                About Me
+          <HStack w="full" align="center" justify="center" my={4} spacing={2}>
+            <Link href="https://read.cv/kr3mil" target="_blank">
+              <Button
+                w="150px"
+                rightIcon={<ChevronRightIcon />}
+                colorScheme="teal"
+              >
+                read.cv
+              </Button>
+            </Link>
+            <NextLink href="/portfolio">
+              <Button
+                w="150px"
+                rightIcon={<ChevronRightIcon />}
+                colorScheme="teal"
+              >
+                View CV
               </Button>
             </NextLink>
             <NextLink href="/portfolio">
               <Button
-                ml="20px"
+                w="150px"
                 rightIcon={<ChevronRightIcon />}
                 colorScheme="teal"
               >
                 My Portfolio
               </Button>
             </NextLink>
-          </Box>
+          </HStack>
         </Section>
 
         <Section delay={0.2}>
