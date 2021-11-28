@@ -59,9 +59,18 @@ const Page = () => {
             skills/languages here).
           </Paragraph>
           <Box align="center" my={4}>
-            <NextLink href="/works">
+            <NextLink href="/about">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                My portfolio
+                About Me
+              </Button>
+            </NextLink>
+            <NextLink href="/portfolio">
+              <Button
+                ml="20px"
+                rightIcon={<ChevronRightIcon />}
+                colorScheme="teal"
+              >
+                My Portfolio
               </Button>
             </NextLink>
           </Box>
