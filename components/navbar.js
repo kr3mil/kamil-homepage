@@ -40,7 +40,7 @@ const Navbar = props => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#ffffff40', '#20202380')}
+      bg={useColorModeValue('#f0e7db', '#20202380')}
       style={{ backdropFilter: 'blur(10px' }}
       zIndex={1}
       {...props}
@@ -67,15 +67,12 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, nmd: 0 }}
         >
-          <LinkItem href="/about" path={path}>
-            About
+          <LinkItem href="/portfolio" path={path}>
+            Portfolio
           </LinkItem>
-          <LinkItem href="/works" path={path}>
-            Works
-          </LinkItem>
-          <LinkItem href="/posts" path={path}>
+          {/* <LinkItem href="/posts" path={path}>
             Posts
-          </LinkItem>
+          </LinkItem> */}
         </Stack>
 
         <Box flex={1} align="right">
@@ -90,15 +87,15 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/about" passHref>
+                {/* <NextLink href="/about" passHref>
                   <MenuItem as={Link}>About</MenuItem>
+                </NextLink> */}
+                <NextLink href="/portfolio" passHref>
+                  <MenuItem as={Link}>Portfolio</MenuItem>
                 </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
-                </NextLink>
-                <NextLink href="/posts" passHref>
+                {/* <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
-                </NextLink>
+                </NextLink> */}
               </MenuList>
             </Menu>
           </Box>

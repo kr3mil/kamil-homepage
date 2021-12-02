@@ -9,12 +9,12 @@ import thumbUniGameJam from '../public/images/works/uni-game-jam_eyecatch.png'
 import thumbWonky from '../public/images/works/wonky_eyecatch.png'
 import Layout from '../components/layouts/article'
 
-const Works = () => {
+const Portfolio = () => {
   return (
     <Layout>
       <Container>
         <Heading as="h3" fontSize={20} mb={4}>
-          Current Works
+          Current Projects
         </Heading>
 
         <SimpleGrid columns={[1, 1, 1]} gap={6}>
@@ -34,7 +34,7 @@ const Works = () => {
           <Divider my={6} />
 
           <Heading as="h3" fontSize={20} mb={4}>
-            University Works
+            University Projects
           </Heading>
         </Section>
 
@@ -92,4 +92,4 @@ const Works = () => {
   )
 }
 
-export default Works
+export default Portfolio
